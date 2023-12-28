@@ -1,5 +1,5 @@
 const convertToCelsius = function(Fahrenheit) {
-
+  return Math.round(((Fahrenheit - 32) * (5/9))* 10) / 10;
 };
 
 const convertToFahrenheit = function(Celsius) {
