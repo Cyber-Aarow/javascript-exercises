@@ -1,11 +1,13 @@
-const removeFromArray = function(array, value, value2) {
-    let index = array.indexOf(value);
+const removeFromArray = function(array, value1, ...others) {
+    let index = array.indexOf(value1);
     if(index != -1){
         array.splice(index, 1);
     }
-    let index2 = array.indexOf(value2);
-    if(index2 != -1){
-        array.splice(index2, 1);
+    for(let val of others){
+        index = array.indexOf(val);
+        if(index != -1){
+            array.splice(index, 1);
+        }
     }
     return array;
 };
