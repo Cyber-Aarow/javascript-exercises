@@ -5,7 +5,7 @@ const sumAll = function(number1, number2) {
     if(number1 > number2){
         let temp = number1;
         number1 = number2;
-        number2 = number1;
+        number2 = temp;
     }
     for(let i = number1; i <= number2; i++){
         sum += i;
