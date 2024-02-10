@@ -11,12 +11,12 @@ const sum = function(array) {
 	array.forEach((value) => add(final_sum, value));
 };
 
-const multiply = function() {
-
+const multiply = function(x, y) {
+  return x * y;
 };
 
-const power = function() {
-	
+const power = function(x, y) {
+	return x ** y;
 };
 
 const factorial = function() {
